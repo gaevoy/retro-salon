@@ -1,1 +1,12 @@
-theme: jekyll-theme-merlot
+gems: [jekyll-paginate]
+excerpt_separator: ""
+highlighter: rouge
+markdown: kramdown
+url: http://retro-salon.dp.ua
+title: РЕТРО
+email: 
+author: Vladimir Gaevoy
+description: Салон красоты РЕТРО
+paginate: 5
+paginate_path: "page:num"
+#google_analytics: UA-73040051-1

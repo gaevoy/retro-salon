@@ -1,0 +1,54 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="widget contact-widget">
+          <h3 class="widget-title">Контакты</h3>
+          <div class="contact-info">
+            <address>
+              <img src="/images/icon-map-small.png" class="icon">
+              <p><strong>РЕТРО</strong> проспект Слобожанский, 37, Днепр</p>
+            </address>
+            <!--<a href="mailto:contact@companyname.com" class="mail"><img src="/images/icon-envelope-small.png" class="icon">contact@companyname.com</a>-->
+            <a href="tel:+380968747004" class="phone"><img src="/images/icon-phone-small.png" class="icon">+38 (096) 874 70 04</a>
+            <a href="tel:+380567474008" class="phone"><img src="/images/icon-phone-small.png" class="icon">+38 (056) 747 40 08</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="widget">
+          <h3 class="widget-title">Присоединяйтесь</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/retrosalondnepr/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/retro_salon_krasoty/"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <!--<div class="col-md-6">
+        <div class="widget">
+          <h3 class="widget-title">Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident et praesentium </p>
+          <form action="#" class="subscribe-form">
+            <input type="email" placeholder="Enter our email...">
+            <input type="submit" value="Sign up">
+          </form>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</footer>
+
+{% if site.google_analytics %}
+<script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endif %}

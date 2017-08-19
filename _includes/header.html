@@ -1,0 +1,30 @@
+<header class="site-header">
+    <div class="container">
+        <a id="branding" href="/">
+                <img src="/images/logo.png" alt="РЕТРО" class="logo">
+                <div class="logo-copy">
+                  <h1 class="site-title">РЕТРО</h1>
+                  <small class="site-description">салон красоты</small>
+                </div>
+              </a>
+        <!-- #branding -->
+
+
+        <!-- Default snippet for navigation -->
+        {% assign current = page.url | downcase | split: '/' %}
+        <div class="main-navigation">
+            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+            <ul class="menu">
+                <!--<li class="menu-item {% if current[1] == null %}current-menu-item{% endif %}"><a href="/">Home</a></li>-->
+                <li class="menu-item {% if current[1] == 'about' %}current-menu-item{% endif %}"><a href="/about/">О нас</a></li>
+                <li class="menu-item {% if current[1] == 'service' %}current-menu-item{% endif %}"><a href="/service/">Услуги</a></li>
+                <li class="menu-item {% if current[1] == 'gallery' %}current-menu-item{% endif %}"><a href="/gallery/">Наши работы</a></li>
+                <li class="menu-item {% if current[1] == 'contact' %}current-menu-item{% endif %}"><a href="/contact/">Контакты</a></li>
+            </ul>
+            <!-- .menu -->
+        </div>
+        <!-- .main-navigation -->
+
+        <div class="mobile-navigation"></div>
+    </div>
+</header>
